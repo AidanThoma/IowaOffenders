@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iowa Offender Map</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet MarkerCluster CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Iowa Registry Map</p>
+        <h1>Offenders in the Area</h1>
+        <p class="subtitle">
+          Pins are generated from <code>/data/offenders.json</code>.
+          Click a marker to view the offender thumbnail, tier, address, wanted status,
+          and registry link.
+        </p>
+      </div>
+
+      <div class="stats-card">
+        <span id="offenderCount">0</span>
+        <small>mapped records</small>
+      </div>
+    </section>
+
+    <section class="map-card">
+      <div id="map"></div>
+    </section>
+
+    <section class="legend">
+      <div class="legend-item">
+        <span class="legend-dot tier-1"></span>
+        Tier 1
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot tier-2"></span>
+        Tier 2
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot tier-3"></span>
+        Tier 3
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot wanted-dot"></span>
+        Wanted
+      </div>
+    </section>
+  </main>
+Technology Associate Program - Upcoming Graduate (2-Year Rotation Program)
+Des Moines, IA, USA
+Employees work in a hybrid mode
+In office Tuesday, Wednesday, and Thursday.
+Full-time
+Department: Technology Associate Program
+Work Environment: Hybrid
+Pay Grade: 18
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Your map logic -->
+  <script src="/js/map.js"></script>
+</body>
+</html>
